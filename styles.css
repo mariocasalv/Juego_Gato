@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4b79a1);
+    background-size: 100% 200%;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.title{
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px #000000;
+}
+.maingame{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+.winorlose {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    z-index: 1000; 
+    display: none; 
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #000000;
+}
+.winorlose a :hover{
+    background-color: rgba(0, 0, 255, 0.26);
+}
+.canvas{
+    
+    height: 100%;   
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.gato{
+    width: 90px;
+    height: 90px;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftside, .rightside, .game{
+    flex-basis: 33.333%;
+}
+.rightside{
+    margin-right: 20px;
+}
+.leftside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftside ul, .rightside ul{
+    list-style: none;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.466);
+    
+    
+
+}
+ul{
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px) brightness(0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+.leftside li, .rightside li {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+.profe{
+    color: pink;
+}
+@media (max-width: 1000px) {
+    .canvas{
+        flex-direction: column;
+    }
+    .leftside{
+        font-size: 15px;
+    }
+    /* … */
+  }
